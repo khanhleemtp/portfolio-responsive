@@ -1,5 +1,4 @@
 // Menu button
-@import '_config';
 .menu-btn{  
     position: absolute;
     z-index: 3;
@@ -12,7 +11,7 @@
         width: 28px;
         height: 3px;
         margin: 0 0 5px 0;
-        background: #fff;
+        background: set-text-color($primary-color);
         @include easeOut;
     }
 
@@ -86,10 +85,10 @@
             transform: translate3d(0, 0, 0);
         }
 
-        .portrain {
+        .portrait {
             width: 250px;
             height: 250px;
-            background: url('../dist/img/portrait.jpg');
+            background: url("../img/portrait.jpg");
             border-radius: 50%;
             border: solid 3px $secondary-color;
         }
@@ -115,7 +114,7 @@
         text-transform: uppercase;
         padding: 1rem 0;
         font-weight: 300;
-        color: #fff;
+        color: set-text-color($primary-color);
         text-decoration: none;
         @include easeOut;
         &:hover {
